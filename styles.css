@@ -9,6 +9,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  background-color: #f4f7f6;
 
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
@@ -20,8 +21,13 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 10px 30px;
   max-width: 900px;
+  background-color: #ffffff; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  border-radius: 8px; 
+  border-bottom: 3px solid var(--border-color);
+  margin-bottom: 30px;
 }
 
 .fh {
@@ -45,8 +51,7 @@ body {
 }
 
 .resume__block {
-  border-bottom: 3px solid var(--border-color);
-  padding-bottom: 30px;
+  padding: 20px;
   margin-bottom: 15px;
 }
 
@@ -91,7 +96,7 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contact-info__block--center {
@@ -103,6 +108,7 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  border-bottom: 3px solid var(--border-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -127,10 +133,10 @@ body {
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border: 3px solid;
+  border: 2px solid;
   border-color: var(--text-decoration-color);
 }
 
@@ -170,7 +176,7 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: center;
 }
 
 /* Experience and additional info styles */
@@ -178,6 +184,7 @@ body {
 .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
+  padding-left: 20px;
 }
 
 .experiences__header {
@@ -202,7 +209,6 @@ body {
 }
 
 .experiences__company-project {
-  margin-left: 15px;
   margin-bottom: 25px;
 }
 
@@ -267,4 +273,36 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/* hobbies section styles */
+
+.hobbies__header{
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hobbies__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hobbies__list li {
+  font-size: 0.9rem;  
+  opacity: 0.8;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.hobbies__list li strong {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.hobbies__list li:last-child {
+  margin-bottom: 0;
 }
